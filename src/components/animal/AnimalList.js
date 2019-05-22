@@ -7,7 +7,8 @@ class AnimalList extends Component {
             {
                 this.props.animals.map(animal =>
                     <div key={animal.id}>
-                        {animal.name}
+                        <h4>{animal.name}</h4>
+                        <p>{animal.breed}</p>
                     </div>
                 )
             }
