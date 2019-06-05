@@ -19,8 +19,21 @@ class NavBar extends Component {
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="owners">Owners</Link>
-                    </li>    
+                    </li>
                 </ul>
+                <section className="section">
+                    <form className="form" id="search">
+                        <input
+                        type="text"
+                        className="input"
+                        id="addInput"
+                        placeholder="Search"
+                        />
+                        <button className="button is-info" onClick={this.addItem}>
+                        Search
+                        </button>
+                    </form>
+                </section>
             </nav>
         )
     }
